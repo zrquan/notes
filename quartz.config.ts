@@ -8,14 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "🧠 Rome in mind",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
+    locale: "zh-CN",
     baseUrl: "quartz.jzhao.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
@@ -24,32 +24,32 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "LXGW Wenkai",
+        body: "LXGW Wenkai",
+        code: "Fira Code",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#eff1f5",          // page background
+          lightgray: "#bcc0cc",      // borders
+          gray: "#7287fd",           // graph links, heavier borders
+          darkgray: "#4c4f69",       // body text
+          dark: "#6c6f85",           // header text and icons
+          secondary: "#1e66f5",      // link colour, current graph node
+          tertiary: "#209fb5",       // hover states and visited graph nodes
+          highlight: "#1e66f533",      // internal link background, highlighted text, highlighted lines of code
+          textHighlight: "#7c7f934d",  // markdown highlighted text background
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#1e1e2e",
+          lightgray: "#45475a",
+          gray: "#b4befe",
+          darkgray: "#cdd6f4",
+          dark: "#a6adc8",
+          secondary: "#89b4fa",
+          tertiary: "#74c7ec",
+          highlight: "#89b4fa33",
+          textHighlight: "#9399b24d",
         },
       },
     },
@@ -62,11 +62,12 @@ const config: QuartzConfig = {
       }),
       Plugin.SyntaxHighlighting({
         theme: {
-          light: "github-light",
-          dark: "github-dark",
+          light: "catppuccin-latte",
+          dark: "catppuccin-mocha",
         },
         keepBackground: false,
       }),
+      Plugin.OxHugoFlavouredMarkdown(),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
