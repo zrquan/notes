@@ -8,6 +8,8 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   const baseDir = pathToRoot(fileData.slug!)
   return (
     <h2 class={classNames(displayClass, "page-title")}>
+      <a href={baseDir}><img id="icon-header" src={baseDir + "/static/seele.png"} alt="" /></a>
+      <br/>
       <a href={baseDir}>{title}</a>
     </h2>
   )
