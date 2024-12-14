@@ -1,10 +1,6 @@
 ---
-title: "Index"
+title: "知識補完計画"
 ---
-
-<script>
-  document.querySelector('.page-header').replaceChildren();
-</script>
 
 <img src="/static/seele.png" style="display:block;margin-left:auto;margin-right:auto;width:40%;" />
 
