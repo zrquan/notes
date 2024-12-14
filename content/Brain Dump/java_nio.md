@@ -1,7 +1,7 @@
 ---
 title: "Java NIO"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:16+08:00
+lastmod: 2024-12-14T18:40:51+08:00
 tags: ["java"]
 draft: false
 ---
@@ -13,8 +13,10 @@ NIO（Non-blocking I/O，在 Java 领域，也称为 New I/O），是一种同�
 NIO 主要有三大核心部分：Channel(通道)，Buffer(缓冲区), Selector。传统 IO 基于字节流
 和字符流进行操作，而 NIO 基于 Channel 和 Buffer 进行操作，数据总是从通道读取到缓冲区中，
 或者从缓冲区写入到通道中。Selector 用于监听多个通道的事件（比如：连接打开，数据到
-达）。因此，单个线程可以监听多个数据通道。
+达）。因此，单个[线程]({{< relref "线程.md" >}})可以监听多个数据通道。
 
 常见 I/O 模型对比：
 
-{{< figure src="../.images/_20220208_175334screenshot.png" >}}
+{{< figure src="/ox-hugo/_20220208_175334screenshot.png" >}}
+
+Go 中的 channel 也是 NIO 的一种实现
