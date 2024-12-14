@@ -1,12 +1,12 @@
 ---
 title: "Namespace"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:37+08:00
+lastmod: 2024-12-14T17:44:22+08:00
 tags: ["linux"]
 draft: false
 ---
 
-Linux 的 namespace 是一种内核特性，它可以为一组进程提供隔离的运行环境。通过使用
+Linux 的 namespace 是一种内核特性，它可以为一组[进程]({{< relref "进程.md" >}})提供隔离的运行环境。通过使用
 namespace，进程组可以拥有自己独立的系统资源，例如文件系统、网络接口、进程树、用
 户 ID 和挂载点等。这种隔离可以增强系统的安全性，也使得运行环境更加可控。
 

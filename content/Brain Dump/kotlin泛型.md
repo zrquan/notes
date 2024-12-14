@@ -1,7 +1,7 @@
 ---
 title: "Kotlin 泛型"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:29+08:00
+lastmod: 2024-12-14T17:27:51+08:00
 draft: false
 ---
 

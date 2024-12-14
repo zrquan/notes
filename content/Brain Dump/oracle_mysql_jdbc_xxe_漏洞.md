@@ -1,7 +1,7 @@
 ---
 title: "Oracle MySQL JDBC XXE 漏洞"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:39+08:00
+lastmod: 2024-12-14T17:49:14+08:00
 tags: ["java"]
 draft: false
 ---
@@ -14,6 +14,6 @@ getSource 方法，判断当 clazz 是 DOMSource 类型时，使用 DocumentBuil
 
 {{< figure src="/ox-hugo/2021-12-09_11-28-24_screenshot.png" >}}
 
-在 MySQL JDBC 8.0.27 版本开始设置了安全属性，在对象实例化之前做了校验：
+fix: 在 MySQL JDBC 8.0.27 版本开始设置了安全属性，在对象实例化之前做了校验：
 
 {{< figure src="/ox-hugo/2021-12-09_11-28-55_screenshot.png" >}}

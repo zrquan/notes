@@ -1,7 +1,8 @@
 ---
 title: "Resource temporarily unavailable"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:47+08:00
+lastmod: 2024-12-14T17:50:39+08:00
+tags: ["linux"]
 draft: false
 ---
 
@@ -18,7 +19,7 @@ centos 默认 4096，可以调整最大进程数解决
 ## 3. 进程、线程启动过多，linux 无法分配新的 PID {#3-dot-进程-线程启动过多-linux-无法分配新的-pid}
 
 -   /proc/sys/kernel/pid_max
-    操作系统进程、线程 ID 的最大值，系统支持的最大线程数 sysctl kernel.pid_max
+    操作系统[进程]({{< relref "进程.md" >}})、[线程]({{< relref "线程.md" >}}) ID 的最大值，系统支持的最大线程数 `sysctl kernel.pid_max`
 
 -   /proc/sys/kernel/threads-max
     表示内核所能使用的线程的最大数目

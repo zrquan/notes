@@ -1,7 +1,7 @@
 ---
 title: "JSON Web Token"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:27+08:00
+lastmod: 2024-12-14T17:27:18+08:00
 draft: false
 ---
 
@@ -11,7 +11,7 @@ JWT（JSON Web Token）是一种身份认证机制，工作原理是：服务器
 返回给用户一个不可篡改的 JSON 对象，以识别用户的身份。然后用户每次请求都带上这个
 JSON 对象用来表明身份，服务端就不需要为每个用户保存 session 数据了
 
-JWT 最重要的特性是不可篡改，这点通过数字签名来实现，因此服务端可以信任客户端发来
+JWT 最重要的特性是不可篡改，这点通过[数字签名](https://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)来实现，因此服务端可以信任客户端发来
 的数据，并以此判断用户身份
 
 JWT 的数据结构如下图所示：
@@ -87,7 +87,7 @@ Signature，每个部分使用 BASE64URL 算法编码。
     -   hashcat：<https://github.com/hashcat/hashcat/issues/1057>
     -   PyJWT library：<https://github.com/jpadilla/pyjwt>
 
-5.  将 RS256 算法改为 [HS256]({{< relref "20210405-hs256" >}})
+5.  将 RS256 算法改为 HS256
 
     当使用非对称加密算法 [RSA]({{< relref "rsa加密算法.md" >}}) 时，会生成一对密钥，私钥用来签名，对应的公钥用来验证
     签名；而 HS256 算法只有一对密钥用于签名和认证。由于攻击者有时可以获取公钥，因
