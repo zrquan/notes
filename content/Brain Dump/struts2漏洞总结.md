@@ -1,7 +1,8 @@
 ---
 title: "Struts2 漏洞总结"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:39:04+08:00
+lastmod: 2024-12-14T18:05:51+08:00
+tags: ["java"]
 draft: false
 ---
 

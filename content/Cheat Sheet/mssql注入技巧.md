@@ -1,7 +1,7 @@
 ---
 title: "MSSQL注入技巧"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:40:15+08:00
+lastmod: 2024-12-14T17:39:52+08:00
 draft: false
 ---
 
@@ -134,7 +134,7 @@ select @str;
 
 ### CLR {#clr}
 
-可以看做成 mysql 的 udf，不过可以直接使用 16 进制代码来创建自定义函数，不需要写文件。
+可以看做成 mysql 的 [UDF]({{< relref "../mysql_udf提权.md" >}})，不过可以直接使用 16 进制代码来创建自定义函数，不需要写文件。
 
 ```sql
 --DROP ASSEMBLY luan_exec;
