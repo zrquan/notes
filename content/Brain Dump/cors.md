@@ -1,7 +1,6 @@
 ---
 title: "CORS"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T18:38:36+08:00
 draft: false
 ---
 

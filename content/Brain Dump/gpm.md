@@ -1,7 +1,6 @@
 ---
 title: "GPM"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T18:34:00+08:00
 tags: ["go"]
 draft: false
 ---

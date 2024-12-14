@@ -1,7 +1,6 @@
 ---
 title: "Fastjson漏洞总结"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:12+08:00
 tags: ["poc", "fastjson"]
 draft: false
 ---

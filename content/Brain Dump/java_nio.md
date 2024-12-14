@@ -1,7 +1,6 @@
 ---
 title: "Java NIO"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T18:40:51+08:00
 tags: ["java"]
 draft: false
 ---

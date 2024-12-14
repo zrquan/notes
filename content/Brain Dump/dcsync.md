@@ -1,7 +1,6 @@
 ---
 title: "DCSync"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:09+08:00
 tags: ["域渗透"]
 draft: false
 ---

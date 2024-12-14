@@ -1,7 +1,6 @@
 ---
 title: "HTTP/2 攻击姿势"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:14+08:00
 draft: false
 ---
 
