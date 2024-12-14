@@ -1,7 +1,6 @@
 ---
 title: "flask session伪造"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:12+08:00
 tags: ["ctf"]
 draft: false
 ---

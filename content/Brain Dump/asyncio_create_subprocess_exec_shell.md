@@ -1,7 +1,6 @@
 ---
 title: "asyncio.create_subprocess_exec/shell"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:02+08:00
 draft: false
 ---
 
