@@ -1,7 +1,6 @@
 ---
-title: "Callouts"
+title: "Obsidian Callouts"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T20:50:55+08:00
 draft: false
 ---
 
