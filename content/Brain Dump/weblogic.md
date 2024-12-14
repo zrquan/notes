@@ -1,7 +1,8 @@
 ---
 title: "WebLogic"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:39:09+08:00
+lastmod: 2024-12-14T14:25:35+08:00
+tags: ["java"]
 draft: false
 ---
 
