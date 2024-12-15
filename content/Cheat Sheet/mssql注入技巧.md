@@ -134,7 +134,7 @@ select @str;
 
 ### CLR {#clr}
 
-可以看做成 mysql 的 [UDF]({{< relref "../mysql_udf提权.md" >}})，不过可以直接使用 16 进制代码来创建自定义函数，不需要写文件。
+可以看做成 mysql 的 [UDF]({{< relref "../Brain-Dump/mysql_udf提权.md" >}})，不过可以直接使用 16 进制代码来创建自定义函数，不需要写文件。
 
 ```sql
 --DROP ASSEMBLY luan_exec;

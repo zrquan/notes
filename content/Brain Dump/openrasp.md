@@ -1,14 +1,13 @@
 ---
 title: "OpenRASP"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:39+08:00
 draft: false
 ---
 
 -   CustomClassTransformer: 字节码转换器，调用 hook 类进行插桩
 -   使用 javassist 库插桩，将 XxxHook 类中的 checkXxx 静态方法插入到目标方法中
 -   请求线程检测入口：HookHandler#doCheck
--   当去 hook 像 java.io.File 这样由 BootstrapClassLoader 加载的类的时候，无法从该
+-   当去 hook 像 java.io.File 这样由 [BootstrapClassLoader]({{< relref "classloader.md" >}}) 加载的类的时候，无法从该
     类调用非 BootstrapClassLoader 加载的类中的接口，所以 agent.jar 会先将自己添加
     到 BootstrapClassLoader 的 ClassPath 下
 -   给 openrasp.yml 和 js 插件目录以及 assets 目录增加文件监控，以便文件内容更改的

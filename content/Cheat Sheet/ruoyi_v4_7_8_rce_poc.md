@@ -1,9 +1,11 @@
 ---
 title: "RuoYi-v4.7.8-RCE-POC"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:40:18+08:00
+tags: ["poc"]
 draft: false
 ---
+
+REF: <https://github.com/luelueking/RuoYi-v4.7.8-RCE-POC>
 
 The system had vulnerabilities in the scheduled tasks before, and now I
 bypass it.
