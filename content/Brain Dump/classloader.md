@@ -1,7 +1,7 @@
 ---
 title: "Java ClassLoader"
 author: ["4shen0ne"]
-tags: ["java"]
+tags: ["jvm", "java"]
 draft: false
 ---
 
