@@ -68,17 +68,14 @@ InvocationHandler。每次调用代理对象的方法，最终都会调用 Invoc
 ### 示例代码 {#示例代码}
 
 ```java
-/*
-* CLassLoader loader：指定动态代理类的类加载器
-* Class<?> interfaces：指定动态代理类需要实现的所有接口，需要被增强的接口列表
-* InvocationHandler h：指定与动态代理类关联的 InvocationHandler 对象
-*/
 Proxy.newProxyInstance(ClassLoader loader, Class<?>[] interfaces, InvocationHandler h)
 ```
-<div class="src-block-caption">
-  <span class="src-block-number">Code Snippet 1:</span>
-  接口
-</div>
+
+-   CLassLoader loader：指定动态代理类的[类加载器]({{< relref "classloader.md" >}})
+-   Class&lt;?&gt; interfaces：指定动态代理类需要实现的所有接口，需要被增强的接口列表
+-   InvocationHandler h：指定与动态代理类关联的 InvocationHandler 对象
+
+<!--listend-->
 
 ```java
   import java.lang.reflect.InvocationHandler;
@@ -130,6 +127,6 @@ Proxy.newProxyInstance(ClassLoader loader, Class<?>[] interfaces, InvocationHand
   }
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">Code Snippet 2:</span>
+  <span class="src-block-number">Code Snippet 1:</span>
   demo
 </div>
