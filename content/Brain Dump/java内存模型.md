@@ -42,7 +42,7 @@ JMM 规定所有变量都要存储在主内存中
 每个线程会有自己的工作内存（本地内存），用来保存主内存中变量的副本，工作内存是一
 个抽象概念，根据不同情况可能包括高速缓存、写缓冲区、寄存器等不同的物理位置
 
-{{< figure src="../.images/JMM/_20220514_174228screenshot.png" >}}
+{{< figure src="/ox-hugo/_20220514_174228screenshot.png" >}}
 
 
 ### <span class="org-todo todo TODO">TODO</span> 内存交互操作 {#内存交互操作}
