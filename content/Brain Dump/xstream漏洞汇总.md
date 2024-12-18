@@ -1,7 +1,6 @@
 ---
 title: "XStream漏洞汇总"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:39:15+08:00
 draft: false
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Spring中Filter和Interceptor的区别"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:39:02+08:00
 tags: ["spring", "java"]
 draft: false
 ---

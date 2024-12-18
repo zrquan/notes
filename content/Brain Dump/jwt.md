@@ -1,7 +1,6 @@
 ---
 title: "JSON Web Token"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T17:27:18+08:00
 draft: false
 ---
 

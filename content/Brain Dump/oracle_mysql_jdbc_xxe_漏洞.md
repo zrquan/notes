@@ -1,7 +1,6 @@
 ---
 title: "Oracle MySQL JDBC XXE 漏洞"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T17:49:14+08:00
 tags: ["java"]
 draft: false
 ---

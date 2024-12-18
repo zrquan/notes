@@ -1,7 +1,6 @@
 ---
 title: "ZIP伪加密"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T18:30:12+08:00
 tags: ["ctf"]
 draft: false
 ---

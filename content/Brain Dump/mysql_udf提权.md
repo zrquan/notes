@@ -1,7 +1,6 @@
 ---
 title: "MySQL UDF提权"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T17:39:33+08:00
 draft: false
 ---
 

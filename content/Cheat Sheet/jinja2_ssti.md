@@ -1,7 +1,6 @@
 ---
 title: "Jinja2 SSTI"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:40:13+08:00
 tags: ["ssti", "ctf"]
 draft: false
 ---

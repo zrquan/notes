@@ -1,7 +1,6 @@
 ---
 title: "Linux挂载NTFS设备失败"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:40:14+08:00
 draft: false
 ---
 

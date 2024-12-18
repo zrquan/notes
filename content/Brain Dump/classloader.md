@@ -38,10 +38,10 @@ Java 装载类使用“全盘负责委托机制”。
 
 1.  Bootstrp ClassLoader
 
-    用 `C++` 语言写的，在 Java 虚拟机启动后初始化，它主要负责加载 `%JAVA_HOME%/jre/lib`
+    用 C++ 语言写的，在 Java 虚拟机启动后初始化，它主要负责加载 `%JAVA_HOME%/jre/lib`
     、-Xbootclasspath 参数指定的路径以及 `%JAVA_HOME%/jre/classes` 中的类。
 
-    Bootstrap Loader 是用 `C++` 实现的，在 java 的逻辑中不存在此加载器的实体，试图打印
+    Bootstrap Loader 是用 C++ 实现的，在 java 的逻辑中不存在此加载器的实体，试图打印
     其内容时会输出 null。
 
 2.  Extension ClassLoader
@@ -56,9 +56,9 @@ Java 装载类使用“全盘负责委托机制”。
 3.  Application ClassLoader
 
     Bootstrp loader 加载完 ExtClassLoader 后，就会加载 AppClassLoader，并且将
-    AppClassLoader 的父加载器指定为 ExtClassLoader。
+    AppClassLoader 的父加载器指定为 ExtClassLoader
 
     AppClassLoader 也是用 Java 写成的，它的实现类是 `sun.misc.Launcher$AppClassLoader`
     ，另外我们知道 ClassLoader 中有个 getSystemClassLoader 方法，此方法返回的正是
     AppclassLoader。AppClassLoader 主要负责加载 classpath 所指定的位置的类或者是 jar
-    文档，它也是 Java 程序默认的类加载器。
+    文档， **它也是 Java 程序默认的类加载器**

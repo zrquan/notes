@@ -1,7 +1,6 @@
 ---
 title: "清理.git目录"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:40:24+08:00
 draft: false
 ---
 

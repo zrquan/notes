@@ -1,7 +1,6 @@
 ---
 title: "Linux 特殊权限"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:30+08:00
 tags: ["linux"]
 draft: false
 ---
