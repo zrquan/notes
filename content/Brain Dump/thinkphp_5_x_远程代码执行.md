@@ -1,7 +1,6 @@
 ---
 title: "ThinkPHP 5.x 远程代码执行"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:39:06+08:00
 tags: ["vuln"]
 draft: false
 ---

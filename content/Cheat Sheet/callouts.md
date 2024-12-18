@@ -4,7 +4,7 @@ author: ["4shen0ne"]
 draft: false
 ---
 
-Quartz 支持 [Obsidian callouts](https://help.obsidian.md/Editing+and+formatting/Callouts)，但因为我是将 [org-mode]({{< relref "../Brain-Dump/org_mode.md" >}}) 导出为 markdown，需要用以下
+Quartz 支持 [Obsidian callouts](https://help.obsidian.md/Editing+and+formatting/Callouts)，但因为我是将 [org-mode]({{< relref "../org_mode.md" >}}) 导出为 markdown，需要用以下
 写法：
 
 ```text

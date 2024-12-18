@@ -1,7 +1,6 @@
 ---
 title: "LSB隐写"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:33+08:00
 tags: ["misc", "ctf"]
 draft: false
 ---

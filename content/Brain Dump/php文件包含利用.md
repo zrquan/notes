@@ -1,7 +1,6 @@
 ---
 title: "PHP文件包含利用"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:42+08:00
 draft: false
 ---
 

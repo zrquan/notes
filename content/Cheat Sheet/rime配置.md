@@ -1,7 +1,6 @@
 ---
 title: "rime配置"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:40:18+08:00
 tags: ["rime"]
 draft: false
 ---

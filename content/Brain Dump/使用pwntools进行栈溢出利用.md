@@ -1,7 +1,6 @@
 ---
 title: "使用pwntools进行栈溢出利用"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:39:20+08:00
 tags: ["ctf", "chatgpt"]
 draft: false
 ---

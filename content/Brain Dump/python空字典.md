@@ -1,7 +1,6 @@
 ---
 title: "python空字典"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:44+08:00
 tags: ["python"]
 draft: false
 ---

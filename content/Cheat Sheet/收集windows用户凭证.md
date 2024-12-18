@@ -1,7 +1,6 @@
 ---
 title: "收集Windows用户凭证"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:40:22+08:00
 tags: ["windows"]
 draft: false
 ---

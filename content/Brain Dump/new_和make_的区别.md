@@ -1,7 +1,6 @@
 ---
 title: "new()和make()的区别"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:37+08:00
 tags: ["go"]
 draft: false
 ---

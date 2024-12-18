@@ -1,7 +1,6 @@
 ---
 title: "TLS"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:39:07+08:00
 draft: false
 ---
 

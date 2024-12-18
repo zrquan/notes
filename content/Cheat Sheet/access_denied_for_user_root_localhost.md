@@ -1,7 +1,6 @@
 ---
 title: "Access denied for user 'root'@'localhost'"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:40:04+08:00
 tags: ["mysql"]
 draft: false
 ---

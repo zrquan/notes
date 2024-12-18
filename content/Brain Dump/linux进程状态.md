@@ -1,12 +1,11 @@
 ---
 title: "Linux进程状态"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T19:19:31+08:00
 tags: ["linux"]
 draft: false
 ---
 
-在 Linux 中使用 `ps` 命令列出[进程]({{< relref "进程" >}})时，可以看到 STAT 这一列有几个字母用来表示这个进
+在 Linux 中使用 `ps` 命令列出[进程]({{< relref "进程.md" >}})时，可以看到 STAT 这一列有几个字母用来表示这个进
 程的状态
 
 

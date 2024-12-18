@@ -1,7 +1,6 @@
 ---
 title: "Spring Boot Actuator信息泄露"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:39:01+08:00
 tags: ["vuln"]
 draft: false
 ---

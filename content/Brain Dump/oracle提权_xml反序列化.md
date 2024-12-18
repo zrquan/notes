@@ -1,7 +1,6 @@
 ---
 title: "Oracle 提权-XML 反序列化"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:40+08:00
 draft: false
 ---
 

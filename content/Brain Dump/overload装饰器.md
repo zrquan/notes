@@ -1,7 +1,6 @@
 ---
 title: "@overload装饰器"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T14:30:38+08:00
 tags: ["python"]
 draft: false
 ---

@@ -1,7 +1,6 @@
 ---
 title: "python下划线用法"
 author: ["4shen0ne"]
-lastmod: 2024-12-14T01:38:43+08:00
 tags: ["python"]
 draft: false
 ---
