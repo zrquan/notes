@@ -5,9 +5,6 @@ tags: ["kotlin"]
 draft: false
 ---
 
-tags
-: [kotlin]({{< relref "kotlin.md" >}})
-
 this 表达式表示当前接收者：
 
 -   在类成员中，this 指该类的当前对象
