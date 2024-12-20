@@ -29,3 +29,5 @@ draft: false
 ```text
 ※ 表示用户数据，要注意备份
 ```
+
+文章推荐：<https://blog.mikelyou.com/2020/07/31/rime-input/>

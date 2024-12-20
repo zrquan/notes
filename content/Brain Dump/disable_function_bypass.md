@@ -1,6 +1,7 @@
 ---
 title: "disable_function bypass"
 author: ["4shen0ne"]
+tags: ["php"]
 draft: false
 ---
 
