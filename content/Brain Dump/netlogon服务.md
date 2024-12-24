@@ -1,6 +1,7 @@
 ---
 title: "Netlogon服务"
 author: ["4shen0ne"]
+tags: ["windows"]
 draft: false
 ---
 

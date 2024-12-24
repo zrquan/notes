@@ -6,8 +6,7 @@ draft: false
 
 ## 协商部分 {#协商部分}
 
-WebLogic 中的 [RMI]({{< relref "java_rmi.md" >}}) 通信是使用 T3 协议来传输序列化数据的，可以看成是原生 RMI 使用
-的 JRMP 协议的定制版。T3 协议的数据包分为请求头和请求体两部分，请求头形如：
+WebLogic 中的[RMI]({{< relref "java_rmi.md" >}})通信是使用 T3 协议来传输序列化数据的，可以看成是原生 RMI 使用的 JRMP 协议的定制版。T3 协议的数据包分为请求头和请求体两部分，请求头形如：
 
 ```nil
 t3 12.2.3
@@ -27,7 +26,7 @@ HL:19
 MS:10000000
 ```
 
-注意请求响应都以 `\n\n` 结尾，且响应包中包含 WebLogic 的版本号。
+注意请求响应都以`\n\n`结尾，且响应包中包含 WebLogic 的版本号。
 
 
 ## 协议头部 {#协议头部}
@@ -47,9 +46,7 @@ MS:10000000
 
 ## T3 Abbrev {#t3-abbrev}
 
-MsgAbbrevs 结构体，这个数据结构我不能很好的描述它，因为 T3 协议并没有全部实现 java 反
-序列化协议，而是自己由魔改了一部分。比如 readClassDescriptor 的 class 部分，T3 协议在
-abbrevs 中读取。
+MsgAbbrevs 结构体，这个数据结构我不能很好的描述它，因为 T3 协议并没有全部实现 java 反序列化协议，而是自己由魔改了一部分。比如 readClassDescriptor 的 class 部分，T3 协议在 abbrevs 中读取。
 
 这里将会跳转到 abbrevOffset 标识的部分并开始读取数据。代码如下：
 
@@ -72,16 +69,12 @@ void read(MsgAbbrevInputStream in, BubblingAbbrever at) throws IOException, Clas
 }
 ```
 
-首先读取 msgAbbrev 的数量。然后再读取 length，如果 length 大于本次 T3 请求中存放 abbrev
-的容量，则读取对象，否则读取值。而本次 T3 请求的 abbrev 的容量，就是由前面协议协商的
-AS 标识的值，默认为 255。
+首先读取 msgAbbrev 的数量。然后再读取 length ，如果 length大于本次 T3 请求中存放 abbrev 的容量，则读取对象，否则读取值。而本次 T3 请求的 abbrev 的容量，就是由前面协议协商的 AS 标识的值，默认为 255。
 
 
 ## <span class="org-todo todo TODO">TODO</span> T3 Context {#t3-context}
 
-剩下的 6 个部分是 Java 的序列化数据，以 `ac ed 00 05` 开头。那么对 WebLogic 实施反序
-列化攻击可以有两个思路：将某个序列化部分替换成 payload，或者在第 1 部分后面拼接
-payload。
+剩下的 6 个部分是 Java 的序列化数据，以`ac ed 00 05`开头。那么对 WebLogic 实施反序列化攻击可以有两个思路：将某个序列化部分替换成 payload ，或者在第 1部分后面拼接 payload。
 
 {{< figure src="/ox-hugo/2021-08-23_11-47-35_1993669-20201218164326263-1518550000.png" >}}
 
