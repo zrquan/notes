@@ -4,8 +4,7 @@ author: ["4shen0ne"]
 draft: false
 ---
 
-Git Hooks 的实现其实非常简单，就是就 `.git/hooks` 目录下保存了一些 shell 脚本，然
-后在对应的钩子（时间点）中执行这些脚本
+Git Hooks 的实现其实非常简单，就是就 `.git/hooks` 目录下保存了一些 shell 脚本，然后在对应的钩子（时间点）中执行这些脚本
 
 常见 hook 表格：
 

