@@ -14,8 +14,7 @@ draft: false
 
 {{< figure src="/ox-hugo/_20231228_000053screenshot.png" >}}
 
-如果出现 `configure arguments: --with-http_ssl_module` 则已经安装 ssl 模块，否则需
-要先进入 nginx 的源码目录中，运行以下配置命令
+如果出现 `configure arguments: --with-http_ssl_module` 则已经安装 ssl 模块，否则需要先进入 nginx 的源码目录中，运行以下配置命令
 
 ```text
 ./configure --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module
@@ -23,8 +22,7 @@ draft: false
 
 然后运行 `make` (不要使用 `make install` ，否则会重新安装 nginx)
 
-上述操作执行完成以后，目录下会出现 `objs` 文件夹，文件夹内存在 nginx 可执行文件，用
-它来替换当前环境变量中的 nginx
+上述操作执行完成以后，目录下会出现 `objs` 文件夹，文件夹内存在 nginx 可执行文件，用它来替换当前环境变量中的 nginx
 
 ```bash
 ./nginx -s stop
