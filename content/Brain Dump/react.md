@@ -18,7 +18,8 @@ ReAct 框架允许 LLMs 与外部工具交互来获取额外信息，从而给�
 
 ReAct 提示 LLMs 为任务生成口头推理轨迹和操作，这使得系统执行动态推理来创建、维护和调整操作计划，同时还要支持与外部环境（例如搜索引擎）的交互，以将额外信息合并到推理中
 
-{{< figure src="/ox-hugo/_20241221_153051screenshot.png" >}}
+![](/ox-hugo/_20241221_153051screenshot.png)
+Obs -&gt; Observation
 
 
 ## 资料 {#资料}

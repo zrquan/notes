@@ -27,7 +27,7 @@ draft: false
 
 通过检索增强生成（[RAG]({{< relref "rag.md" >}})）技术来增强其对上下文的理解和记忆保持能力
 
-智能体开发框架： LangChain ；多智能体：AutoGen
+[智能体]({{< relref "llm_agent.md" >}})开发框架： LangChain ；多智能体：AutoGen
 
 知识图谱的应用：通过将网络拓扑结构、漏洞类型等信息进行结构化，知识图谱有效缩小了渗透测试的选择空间，帮助测试人员快速定位潜在漏洞
 
