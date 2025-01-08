@@ -56,21 +56,21 @@ ip.addr eq 192.168.1.254            # 都能显示来源 IP 和目标 IP
 ## HTTP {#http}
 
 ```text
-http.request.method == “GET”
-http.request.method == “POST”
-http.request.uri == “/img/logo-edu.gif”
-http contains “GET”
-http contains “HTTP/1.”
+http.request.method == "GET"
+http.request.method == "POST"
+http.request.uri == "/img/logo-edu.gif"
+http contains "GET"
+http contains "HTTP/1."
 
 # GET包
-http.request.method == “GET” && http contains “Host: “
-http.request.method == “GET” && http contains “User-Agent: “
+http.request.method == "GET" && http contains "Host: "
+http.request.method == "GET" && http contains "User-Agent: "
 # POST包
-http.request.method == “POST” && http contains “Host: “
-http.request.method == “POST” && http contains “User-Agent: “
+http.request.method == "POST" && http contains "Host: "
+http.request.method == "POST" && http contains "User-Agent: "
 # 响应包
-http contains “HTTP/1.1 200 OK” && http contains “Content-Type: “
-http contains “HTTP/1.0 200 OK” && http contains “Content-Type: “
+http contains "HTTP/1.1 200 OK" && http contains "Content-Type: "
+http contains "HTTP/1.0 200 OK" && http contains "Content-Type: "
 ```
 
 
@@ -109,9 +109,9 @@ eth.addr[0:3]==00:06:5B
 matches(匹配)和 contains(包含某字符串)语法
 
 ```text
-ip.src==192.168.1.107 and udp[8:5] matches “\\x02\\x12\\x21\\x00\\x22″
+ip.src==192.168.1.107 and udp[8:5] matches "\\x02\\x12\\x21\\x00\\x22″
 ip.src==192.168.1.107 and udp contains 02:12:21:00:22
-ip.src==192.168.1.107 and tcp contains “GET”
+ip.src==192.168.1.107 and tcp contains "GET"
 udp contains 7c:7c:7d:7d    # 匹配 payload 中含有 0x7c7c7d7d 的 UDP 数据包，不一定是从第一字节匹配
 ```
 

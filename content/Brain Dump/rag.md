@@ -5,23 +5,25 @@ tags: ["llm"]
 draft: false
 ---
 
-当语言模型要完成高复杂度和知识密集型任务时，需要基于语言模型构建一个系统，使它可以访问外部知识，不然可能出现「[幻觉]({{< relref "llm幻觉.md" >}})」
+当语言模型要完成高复杂度和知识密集型任务时，需要基于语言模型构建一个系统，使它可以访问外部知识，不然可能出现「」
 
 Meta AI 的研究人员引入了一种叫做[检索增强生成（Retrieval Augmented Generation， RAG ）](https://ai.facebook.com/blog/retrieval-augmented-generation-streamlining-the-creation-of-intelligent-natural-language-processing-models/)的方法来完成这类知识密集型的任务
 
-RAG 技术是一种将检索和生成技术结合的方法，旨在提高语言模型生成内容的准确性和实用性。RAG 技术尤其适用于需要利用外部知识库来回答问题或生成文本的场景。
+RAG 技术旨在通过检索和整合外部知识来增强大语言模型生成文本的准确性和丰富性，其是一个集成了外部知识库、信息检索器、大语言模型等多个功能模块的系统
+
+RAG 技术尤其适用于需要利用 **外部知识库** 来回答问题或生成文本的场景
 
 LangChain RAG demo: <https://python.langchain.com/docs/tutorials/rag/>
 
 
 ## 文档向量化过程 {#文档向量化过程}
 
-文档-&gt;分词-&gt;[embedding]({{< relref "word_embedding.md" >}})-&gt;向量数据库
+文档-&gt;分词-&gt;-&gt;向量数据库
 
 
 ## 用户查询过程 {#用户查询过程}
 
-用户query-&gt;向量数据库查询-&gt;TOP N-&gt;上下文+用户提问+ [prompt]({{< relref "提示工程.md" >}}) -&gt; LLM -&gt;返回结果
+用户 query-&gt;向量数据库查询-&gt;TOP N-&gt;上下文+ 用户提问 + -&gt; LLM -&gt; 返回结果
 
 
 ### 检索阶段（Retrieval Stage） {#检索阶段-retrieval-stage}
