@@ -44,8 +44,8 @@ export const TableOfContents: QuartzTransformerPlugin<Partial<Options>> = (userO
                   highestDepth = Math.min(highestDepth, node.depth)
                   toc.push({
                     depth: node.depth,
-                    text,
-                    slug: slugAnchor.slug(text),
+                    text: text.replace(/<span.*?>.*<\/span>/ig,"").trim(),
+                    slug: slugAnchor.slug(text.replace(/<[^>]*>/g, "")),
                   })
                 }
               })

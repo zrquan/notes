@@ -3,9 +3,25 @@
 // put your custom CSS here!
 
 body[data-slug="index"] .article-title {
-    display: none;
+  display: none;
 }
 
 .underline {
-    text-decoration: wavy underline;
+  text-decoration: wavy underline;
+}
+
+li.section-li > .section .meta {
+  opacity: .6;
+  margin: 0 0.8em 0 0;
+}
+
+.tag > span {
+  font-size: 0.5em;
+  border-radius: 8px;
+  background-color: var(--highlight);
+  padding: 0.2rem 0.4rem;
+  margin: 0 0.1rem;
+  // &::before {
+  //   content: "#";
+  // }
 }
