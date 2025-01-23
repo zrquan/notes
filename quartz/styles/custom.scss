@@ -17,11 +17,19 @@ li.section-li > .section .meta {
 
 .tag > span {
   font-size: 0.5em;
-  border-radius: 8px;
-  background-color: var(--highlight);
-  padding: 0.2rem 0.4rem;
+  // border-radius: 8px;
+  // background-color: var(--highlight);
+  padding: 0.2rem;
   margin: 0 0.1rem;
-  // &::before {
-  //   content: "#";
-  // }
+  &::before {
+    content: "#";
+  }
+}
+
+.org-todo {
+  font-size: 0.7em;
+  padding: 1px 6px;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 0.1em;
 }
