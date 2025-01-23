@@ -9,4 +9,7 @@ draft: false
 
 研究表明，HijackRAG 的成功率与恶意文本的质量密切相关。高质量的恶意文本不仅需要具备良好的自然语言表达能力，还要能够精准地匹配目标查询的上下文环境。
 
-[ROAM_REFS] <https://www.showapi.com/news/article/678ef2534ddd79f11a4645b6>
+
+## Refs {#refs}
+
+-   <https://www.showapi.com/news/article/678ef2534ddd79f11a4645b6>

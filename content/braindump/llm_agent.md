@@ -10,4 +10,7 @@ draft: false
 ![](/ox-hugo/_20241231_142815screenshot.png)
 Overview of a LLM-powered autonomous agent system
 
-[ROAM_REFS] <https://lilianweng.github.io/posts/2023-06-23-agent/>
+
+## Refs {#refs}
+
+-   <https://lilianweng.github.io/posts/2023-06-23-agent/>

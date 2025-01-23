@@ -20,10 +20,7 @@ draft: false
 :status - 响应码
 ```
 
-1.  结构
-    虽然它们都是应用层的协议，但是 http/1.1 是基于文本的协议，它的结构就像我们看
-    到的一样，而 http/2 在 TCP 层之上抽象出一层分帧层(?)，以字节为单位，通过规范
-    的偏移来确定请求中的数据。
+1.  结构虽然它们都是应用层的协议，但是 http/1.1 是基于文本的协议，它的结构就像我们看到的一样，而 http/2 在 TCP 层之上抽象出一层分帧层(?)，以字节为单位，通过规范的偏移来确定请求中的数据。
 
 
 ## H2.CL {#h2-dot-cl}
@@ -33,16 +30,18 @@ draft: false
 头来走私请求给后端服务器。
 
 
-## H2C {#h2c}
+## <span class="org-todo todo TODO">TODO</span> H2C {#h2c}
 
 [HTTP2]({{< relref "http_2.md" >}}) Cleartext，讲解一些 HTTP/2 明文协议基础上的走私攻击
 
-HTTP/1.1 可以通过协商请求来升级当前协议，类似于 WebSocket 协议，当服务端返回 101 即可
-完成升级，并重用当前连接发送升级后的 H2C 请求
+HTTP/1.1 可以通过协商请求来升级当前协议，类似于 WebSocket 协议，当服务端返回 101 即可完成升级，并重用当前连接发送升级后的 H2C 请求
 
 {{< figure src="/ox-hugo/2021-09-01_17-05-06_screenshot.png" >}}
 
-协议升级完成后前后端会维持一条 TCP 隧道进行通信，而这时候代理服务器不在监控这条通
-道的信息，这可能导致一些拦截绕过的问题，比如通过升级 ws 协议来走私请求
+协议升级完成后前后端会维持一条 TCP 隧道进行通信，而这时候代理服务器不在监控这条通道的信息，这可能导致一些拦截绕过的问题，比如通过升级 ws 协议来走私请求
 
-有点懵，之后有空再看吧：<https://labs.bishopfox.com/tech-blog/h2c-smuggling-request-smuggling-via-http/2-cleartext-h2c>
+
+## Refs {#refs}
+
+-   <https://bishopfox.com/blog/h2c-smuggling-request>
+-   <https://portswigger.net/research/http2>
