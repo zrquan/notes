@@ -33,3 +33,33 @@ li.section-li > .section .meta {
   border-style: solid;
   border-width: 0.1em;
 }
+
+.table-container {
+  display: flex;
+  justify-content: center;
+}
+
+// caption style
+img + em {
+  text-align: center;
+  margin-top: 0;
+  font-size: 0.9em;
+  opacity: 0.8;
+  &::before {
+    content: "Figure: ";
+  }
+}
+.src-block-caption {
+  font-style: italic;
+  text-align: center;
+  margin-top: 0;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+.table-caption {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
