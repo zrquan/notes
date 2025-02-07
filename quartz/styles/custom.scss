@@ -33,3 +33,14 @@ li.section-li > .section .meta {
   border-style: solid;
   border-width: 0.1em;
 }
+
+// figure caption style
+img + em {
+  text-align: center;
+  margin-top: .25em;
+  font-size: 0.9em;
+  opacity: 0.8;
+  &::before {
+    content: "Figure: ";
+  }
+}

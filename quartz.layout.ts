@@ -35,12 +35,11 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   right: [
     Component.Graph({
-      // 标签是一种无效的关系结构，容易不必要地让两个概念看似紧密相连
       localGraph: {
         showTags: false,
       },
       globalGraph: {
-        showTags: false,
+        showTags: true,
       },
     }),
     Component.DesktopOnly(Component.TableOfContents()),

@@ -25,7 +25,7 @@ const defaultOptions: Options = {
 const relrefRegex = new RegExp(/\[([^\]]+)\]\(\{\{< relref "([^"]+)" >\}\}\)/, "g")
 const predefinedHeadingIdRegex = new RegExp(/(.*) {#(?:.*)}/, "g")
 const hugoShortcodeRegex = new RegExp(/{{(.*)}}/, "g")
-const figureTagRegex = new RegExp(/< ?figure src="(.*)" ?>/, "g")
+const figureTagRegex = new RegExp(/< ?figure src="(.*?)"(?: caption="(.*)")? ?>/, "g")
 // \\\\\( -> matches \\(
 // (.+?) -> Lazy match for capturing the equation
 // \\\\\) -> matches \\)
@@ -79,8 +79,12 @@ export const OxHugoFlavouredMarkdown: QuartzTransformerPlugin<Partial<Options>> 
       if (opts.replaceFigureWithMdImg) {
         src = src.toString()
         src = src.replaceAll(figureTagRegex, (value, ...capture) => {
-          const [src] = capture
-          return `![](${src})`
+          const [src, caption] = capture
+          if (caption) {
+            return `![](${src})_${caption.replace(/<span.*?>.*<\/span>/ig,"").trim()}_`
+          } else {
+            return `![](${src})`
+          }
         })
       }
 
