@@ -5,8 +5,7 @@ tags: ["java"]
 draft: false
 ---
 
-MBean 是 Managed Bean 的简称，在 [JMX]({{< relref "jmx.md" >}}) 中 MBean 代表一个被管理的资源实例，其模型和
-[JavaBean]({{< relref "javabean.md" >}}) 相同，不过遵循一些额外的规则方便 MBeanServer 对其生命周期进行监控和管理
+MBean 是 Managed Bean 的简称，在 [JMX]({{< relref "jmx.md" >}}) 中 MBean 代表一个被管理的资源实例，其模型和 [JavaBean]({{< relref "javabean.md" >}}) 相同，不过遵循一些额外的规则方便 MBeanServer 对其生命周期进行监控和管理
 
 1.  必须是公共的，非抽象的类
 2.  必须有至少一个公共的构造器

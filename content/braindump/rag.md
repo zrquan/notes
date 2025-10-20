@@ -5,7 +5,7 @@ tags: ["llm"]
 draft: false
 ---
 
-当语言模型要完成高复杂度和知识密集型任务时，需要基于语言模型构建一个系统，使它可以访问外部知识，不然可能出现「」
+当语言模型要完成高复杂度和知识密集型任务时，需要基于语言模型构建一个系统，使它可以访问外部知识，不然可能出现「[幻觉]({{< relref "llm幻觉.md" >}})」
 
 Meta AI 的研究人员引入了一种叫做[检索增强生成（Retrieval Augmented Generation， RAG ）](https://ai.facebook.com/blog/retrieval-augmented-generation-streamlining-the-creation-of-intelligent-natural-language-processing-models/)的方法来完成这类知识密集型的任务
 
@@ -18,12 +18,12 @@ LangChain RAG demo: <https://python.langchain.com/docs/tutorials/rag/>
 
 ## 文档向量化过程 {#文档向量化过程}
 
-文档-&gt;分词-&gt;-&gt;向量数据库
+文档-&gt;分词-&gt;[embedding]({{< relref "word_embedding.md" >}})-&gt;向量数据库
 
 
 ## 用户查询过程 {#用户查询过程}
 
-用户 query-&gt;向量数据库查询-&gt;TOP N-&gt;上下文+ 用户提问 + -&gt; LLM -&gt; 返回结果
+用户 query-&gt;向量数据库查询-&gt;TOP N-&gt;上下文+ 用户提问 + [prompt]({{< relref "提示工程.md" >}}) -&gt; LLM -&gt; 返回结果
 
 
 ### 检索阶段（Retrieval Stage） {#检索阶段-retrieval-stage}
@@ -53,3 +53,10 @@ LangChain RAG demo: <https://python.langchain.com/docs/tutorials/rag/>
 5.  生成模型输入：将用户查询和检索到的文档片段作为上下文输入到生成模型中。常见的方法是将查询和文档拼接成一个输入序列。
 
 6.  生成答案：使用生成模型（ GPT-3 、BERT 等）生成基于上下文的答案或文本。
+
+
+## 局限性 {#局限性}
+
+RAG 的局限性就是比较依赖搜索引擎和检索数据源， **想要一次性就准确并且完整的检索到回答用户问题需要的参考信息难度比较大，很容易出现检索数据缺漏，或者检索结果质量深度不够的问题** ，比较适合快搜索以及简单问答场景。
+
+为了解决 RAG 的局限性，发展出 [Deep Search]({{< relref "deep_search.md" >}}) 和 [Deep Research]({{< relref "deep_research.md" >}}) 等技术。

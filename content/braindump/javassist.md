@@ -5,8 +5,7 @@ tags: ["java"]
 draft: false
 ---
 
-Javassit 是一个用来操作 Java 字节码的库，通过操作字节码可以实现[反射]({{< relref "reflection.md" >}})，即在运行时
-更改类的实现的能力，而且比起使用反射 API 性能更好
+Javassit 是一个用来操作 Java 字节码的库，通过操作字节码可以实现[反射]({{< relref "reflection.md" >}})，即在运行时更改类的实现的能力，而且比起使用反射 API 性能更好
 
 
 ## 使用 {#使用}

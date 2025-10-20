@@ -7,15 +7,12 @@ draft: false
 
 ## 简介 {#简介}
 
-Service Principal Names，服务主体名称，是服务实例（比如 HTTP、MSSQL）的唯一标识符。
-Kerberos 身份验证使用 SPN 将服务实例与服务登录帐户相关联，如果想使用 Kerberos 协
-议来认证服务，那么必须正确配置 SPN。
+Service Principal Names，服务主体名称，是服务实例（比如 HTTP、 MSSQL ）的唯一标识符。Kerberos 身份验证使用 SPN 将服务实例与服务登录帐户相关联，如果想使用 Kerberos 协议来认证服务，那么必须正确配置 SPN。
 
 SPN 有两种类型：
 
-1.  注册在域的机器帐户下（Computers），此时服务的权限为 Local System 或 Network
-    Service
-2.  注册在域用户帐户下（Users），此时服务的权限即为域用户权限
+1.  注册在域的机器帐户下（ Computers ），此时服务的权限为 Local System 或 Network Service
+2.  注册在域用户帐户下（ Users ），此时服务的权限即为域用户权限
 
 {{< figure src="/ox-hugo/2021-10-20_17-07-01_screenshot.png" >}}
 

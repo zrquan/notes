@@ -4,7 +4,7 @@ author: ["4shen0ne"]
 draft: false
 ---
 
-CodeQL 是由 Semmle（2019 年被 GitHub 收购）开发的一款功能强大的静态代码分析工具，基于牛津大学一个团队十多年的研究。CodeQL 使用数据流分析和[污点分析]({{< relref "污点分析.md" >}})来查找代码错误、检查代码质量并识别漏洞。目前支持的语言包括 C/C++、C#、 Go 、Java、 Kotlin 、JavaScript、 Python 、Ruby、TypeScript 和 Swift。
+CodeQL 是由 Semmle（2019 年被 GitHub 收购）开发的一款功能强大的静态代码分析工具，基于牛津大学一个团队十多年的研究。CodeQL 使用[数据流分析]({{< relref "数据流分析.md" >}})和[污点分析]({{< relref "污点分析.md" >}})来查找代码错误、检查代码质量并识别漏洞。目前支持的语言包括 C/C++、C#、 Go 、Java、 Kotlin 、JavaScript、 Python 、Ruby、TypeScript 和 Swift。
 
 {{< figure src="/ox-hugo/_20250121_101905screenshot.png" >}}
 

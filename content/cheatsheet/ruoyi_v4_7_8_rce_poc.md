@@ -5,21 +5,16 @@ tags: ["poc"]
 draft: false
 ---
 
-REF: <https://github.com/luelueking/RuoYi-v4.7.8-RCE-POC>
-
-The system had vulnerabilities in the scheduled tasks before, and now I
-bypass it.
+The system had vulnerabilities in the scheduled tasks before, and now I bypass it.
 
 
 ## Sqli {#sqli}
 
-In the patch, a strategy using blacklisting and whitelisting was
-employed.
+In the patch, a strategy using blacklisting and whitelisting was employed.
 
 {{< figure src="/ox-hugo/_20240529_145528screenshot.png" >}}
 
-However, I managed to bypass it by using a whitelist class and
-successfully carried out an SQL injection.
+However, I managed to bypass it by using a whitelist class and successfully carried out an SQL injection.
 
 ```java
 genTableServiceImpl.createTable('SELECT 1 FROM 'Hack By 1ue';')
@@ -38,10 +33,7 @@ success to change the data of table `job_id`
 
 ## RCE {#rce}
 
-`JobInvokeUtil` does not allow parentheses in the string during
-invocation, so I modified the parameter value of a specific job in the
-original job table to hexadecimal (bypassing defense detection),
-enabling another scheduled task for Remote Code Execution (RCE).
+`JobInvokeUtil` does not allow parentheses in the string during invocation, so I modified the parameter value of a specific job in the original job table to hexadecimal (bypassing defense detection), enabling another scheduled task for Remote Code Execution (RCE).
 
 {{< figure src="/ox-hugo/_20240529_145632screenshot.png" >}}
 
@@ -56,3 +48,8 @@ the job's invoke_target changed
 {{< figure src="/ox-hugo/_20240529_145656screenshot.png" >}}
 
 and then execute!
+
+
+## Refs {#refs}
+
+-   <https://github.com/luelueking/RuoYi-v4.7.8-RCE-POC>
